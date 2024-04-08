@@ -1,20 +1,27 @@
 .marginBottom8 {
   margin-bottom: 8px;
 }
+.removeBullets {
+  list-style-type: none;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
 }
 body {
-  background-color: #1289A7;
+  background-color: #341f97;
   color: #f5f6fa;
 }
 .container {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
@@ -27,7 +34,7 @@ body {
   }
 }
 header {
-  padding: 24px;
+  padding-bottom: 24px;
 }
 header .profile-pic {
   display: block;
@@ -64,4 +71,25 @@ header .profile-pic {
 }
 .social-links li img:hover {
   transform: scale(1.2);
+}
+.projects-list {
+  list-style-type: none;
+  margin-top: 32px;
+}
+.projects-list-item a {
+  text-decoration: none;
+  background-color: #10ac84;
+  display: block;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #f5f6fa;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #10ac84;
+  transition: all ease 0.3s;
+}
+.projects-list-item a:hover {
+  background-color: transparent;
+  color: #10ac84;
 }
